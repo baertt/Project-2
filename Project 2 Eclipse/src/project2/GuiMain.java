@@ -10,10 +10,10 @@ public class GuiMain extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(GuiMain.class.getResource("Start.fxml"));
+		loader.setLocation(GuiMain.class.getResource("Profile.fxml"));
 		Pane root = (Pane) loader.load();
 
-		Scene scene = new Scene(root, 355, 180);
+		Scene scene = new Scene(root, 417, 511);
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}

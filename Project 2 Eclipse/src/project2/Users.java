@@ -3,6 +3,8 @@ package project2;
 import java.time.LocalDate;
 import java.util.Hashtable;
 
+import Objects.UserInfo;
+
 public class Users {
 	private Hashtable<String, UserInfo> users = new Hashtable<String, UserInfo>();
 
