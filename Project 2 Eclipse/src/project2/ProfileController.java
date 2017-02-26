@@ -31,8 +31,9 @@ public class ProfileController  {
 	Label phoneNumber;
 
 
-	UserInfo baertt = new UserInfo("password", "Taylor Baer", LocalDate.now(), "281-740-3405" , "baertt@hendrix.edu",
-			"Hello! My name is Taylor. This is my profile.");//, getProfilePic() );
+	UserInfo baertt = new UserInfo("password", "Taylor Baer", LocalDate.now(), "281-740-3405" , "baertt@hendrix.edu"
+			/*"Hello! My name is Taylor. This is my profile."*/);
+					//, getProfilePic() );
 
 
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="Project 2 Eclipse/Project 2 Eclipse/src/|Project 2 Eclipse/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="Project 2 Eclipse/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

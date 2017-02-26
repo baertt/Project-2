@@ -27,22 +27,32 @@ public class CreateAccountController {
 	Button createAccount;
 	@FXML
 	Button cancel;
+	@FXML
+	Label prompt;
 
 	StartController start;
+	Users users;
 
 	@FXML
 	public void initialize(){}
 
 	public void getStart(StartController start){
 		this.start = start;
+		this.users = start.getUsers();
 	}
 
 	@FXML
 	public void createAccount(){
-		start.users.add(username.getText(), password.getText(), name.getText(), birthday.getValue(),
+		String currentUsername = username.getText();
+		if (users.checkUserName(currentUsername)) {
+			prompt.setText("This username has already been chosen. Please choose another one.");
+		} else {
+			users.add(username.getText(), password.getText(), name.getText(), birthday.getValue(),
 						phone.getText(), email.getText());
-		openTimeline();
+			openTimeline();
+		}
 	}
+	
 
 	@FXML
 	public void openTimeline(){

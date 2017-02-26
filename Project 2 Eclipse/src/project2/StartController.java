@@ -57,4 +57,9 @@ public class StartController {
 			exc.printStackTrace();
 		}
 	}
+	
+	public Users getUsers() {
+		return users;
+	}
+	
 }
